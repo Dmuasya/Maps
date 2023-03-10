@@ -11,3 +11,5 @@ blocks:
         - name: 'Job #1'
           commands:
             - checkout
+      secrets:
+        - name: GOOGLE_MAPS_API_KEY
