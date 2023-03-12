@@ -11,8 +11,9 @@ blocks:
         - name: 'Job #1'
           commands:
             - checkout
+            - echo $GOOGLE_MAPS_API_KEY
       secrets:
         - name: GOOGLE_MAPS_API_KEY
       env_vars:
         - name: GOOGLE_MAPS_API_KEY
-          value: SEMAPHORE_SECRET_GOOGLE_MAPS_API_KEY
+          value: $GOOGLE_MAPS_API_KEY
